@@ -115,7 +115,14 @@ docs/validation.md         Recorded local checks
 
 ## Group collaboration
 
-Team member names, instructor details, and submission date still need to be supplied by the group. See the proposed work allocation in the project brief. The project is maintained in the private [IteraRoot repository](https://github.com/JethroIsHere/ccs239-iteraroot).
+Jethro coordinates integration and the final demo. Each member’s README lists the work they own, a check they can run, and what to hand over.
+
+| Member | Assignment |
+| --- | --- |
+| Kurt | [Redesign the Streamlit interface for desktop and mobile](docs/team/kurt/README.md) |
+| Christine | [Build the step-through Fixed Point Iteration cobweb plot](docs/team/christine/README.md) |
+| Duke | [Build the step-through Newton–Raphson tangent plot](docs/team/duke/README.md) |
+| Jazylle | [Verify numerical results and prepare the class demo](docs/team/jazylle/README.md) |
 
 ## References
 

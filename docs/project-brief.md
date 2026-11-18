@@ -43,19 +43,11 @@ The assignment permits a preferred platform, including Python through Streamlit 
 
 The screenshots specify 4–5 members per group, balanced composition, and no duplication of chosen methods. This repository does not invite collaborators automatically.
 
-Suggested allocation for a five-person group:
-
-1. Fixed point implementation and explanation of `g(x)`.
-2. Newton–Raphson implementation and differentiation.
-3. Interface, form validation, and tables.
-4. Graphs, examples, and numerical validation.
-5. Documentation, packaging, and presentation.
-
-For four members, combine graphs/validation with documentation/presentation as appropriate. Everyone should be able to explain both update formulas and the stopping rules.
+The [team assignments](../README.md#group-collaboration) link to each member’s tasks and demo checks. Jethro integrates the two plots with the redesigned interface and leads the final demo.
 
 ## Remaining decisions
 
-- Team member names and assigned responsibilities.
+- Full team names in the instructor’s required format.
 - Instructor name, submission date, and any further instructions outside the visible screenshots.
 - Whether the instructor requires a particular error formula, stopping convention, or hand-worked sample.
 - Final visual customization and deployment, if requested.
