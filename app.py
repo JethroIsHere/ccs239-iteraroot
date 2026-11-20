@@ -12,6 +12,7 @@ import streamlit as st
 from iteraroot.examples import EXAMPLES
 from iteraroot.expressions import EvaluationError, ExpressionError, X, parse_expression
 from iteraroot.solvers import SolveResult, fixed_point, newton_raphson
+from iteraroot.cobweb import render_cobweb  
 
 st.set_page_config(page_title="IteraRoot | CCS 239", page_icon="📐", layout="wide")
 
@@ -165,6 +166,30 @@ if "run" in st.session_state:
 
     graph_tab, table_tab, guide_tab = st.tabs(["Graphs", "Iteration tables", "Method guide"])
     with graph_tab:
+
+         # ==============================================
+    # CHRISTINE: FIXED POINT COBWEB VISUALIZATION
+    # ==============================================
+
+        fixed_result = next(
+        (
+            result
+            for result in run["results"]
+            if result.method == "Fixed Point Iteration"
+        ),
+        None,
+    )
+
+    if fixed_result is not None and run["g"] is not None:
+        st.markdown("### Fixed Point Iteration — Cobweb Visualization")
+
+        render_cobweb(
+            g=run["g"],
+            result=fixed_result,
+            left=run["left"],
+            right=run["right"],
+        )
+
         xs = np.linspace(run["left"], run["right"], 600)
         ys = []
         for value in xs:
